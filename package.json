@@ -1,5 +1,5 @@
 {
-  "name": "docker-package",
+  "name": "docker-unbound",
   "description": "",
   "version": "0.0.0",
   "license": "MIT",
@@ -9,11 +9,11 @@
     "url": "https://pascaliske.dev"
   },
   "repository": {
-    "url": "https://github.com/pascaliske/docker-package.git",
+    "url": "https://github.com/pascaliske/docker-unbound.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/pascaliske/docker-package/issues"
+    "url": "https://github.com/pascaliske/docker-unbound/issues"
   },
   "private": true,
   "scripts": {
