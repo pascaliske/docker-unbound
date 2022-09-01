@@ -1,12 +1,12 @@
 # project
-site_name: docker-package
+site_name: docker-unbound
 site_description: TBD
 site_author: Pascal Iske
-site_url: https://pascaliske.github.io/docker-package/
+site_url: https://pascaliske.github.io/docker-unbound/
 
 # repository
-repo_name: pascaliske/docker-package
-repo_url: https://github.com/pascaliske/docker-package
+repo_name: pascaliske/docker-unbound
+repo_url: https://github.com/pascaliske/docker-unbound
 
 # theme
 theme:

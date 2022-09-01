@@ -1,21 +1,21 @@
-# `pascaliske/docker-package`
+# `pascaliske/docker-unbound`
 
 > TBD
 
-[![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/pascaliske/package/latest?style=flat-square)](https://hub.docker.com/r/pascaliske/package) [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/pascaliske/package/latest?style=flat-square)](https://hub.docker.com/r/pascaliske/package) [![Docker Pulls](https://img.shields.io/docker/pulls/pascaliske/package?style=flat-square)](https://hub.docker.com/r/pascaliske/package) [![GitHub Tag](https://img.shields.io/github/v/tag/pascaliske/docker-package?style=flat-square)](https://github.com/pascaliske/docker-package) [![Build Status](https://img.shields.io/github/workflow/status/pascaliske/docker-package/Image/master?label=build&style=flat-square)](https://github.com/pascaliske/docker-package/actions) [![GitHub Last Commit](https://img.shields.io/github/last-commit/pascaliske/docker-package?style=flat-square)](https://github.com/pascaliske/docker-package) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg?style=flat-square)](https://github.com/Naereen/badges)
+[![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/pascaliske/unbound/latest?style=flat-square)](https://hub.docker.com/r/pascaliske/unbound) [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/pascaliske/unbound/latest?style=flat-square)](https://hub.docker.com/r/pascaliske/unbound) [![Docker Pulls](https://img.shields.io/docker/pulls/pascaliske/unbound?style=flat-square)](https://hub.docker.com/r/pascaliske/unbound) [![GitHub Tag](https://img.shields.io/github/v/tag/pascaliske/docker-unbound?style=flat-square)](https://github.com/pascaliske/docker-unbound) [![Build Status](https://img.shields.io/github/workflow/status/pascaliske/docker-unbound/Image/master?label=build&style=flat-square)](https://github.com/pascaliske/docker-unbound/actions) [![GitHub Last Commit](https://img.shields.io/github/last-commit/pascaliske/docker-unbound?style=flat-square)](https://github.com/pascaliske/docker-unbound) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg?style=flat-square)](https://github.com/Naereen/badges)
 
 ## Image
 
 | Registry                  | Image                                                                                               |
 | ------------------------- | --------------------------------------------------------------------------------------------------- |
-| GitHub Container Registry | [`ghcr.io/pascaliske/package`](https://github.com/pascaliske/docker-package/pkgs/container/package) |
-| Docker Hub                | [`pascaliske/package`](https://hub.docker.com/r/pascaliske/package)                                 |
+| GitHub Container Registry | [`ghcr.io/pascaliske/unbound`](https://github.com/pascaliske/docker-unbound/pkgs/container/unbound) |
+| Docker Hub                | [`pascaliske/unbound`](https://hub.docker.com/r/pascaliske/unbound)                                 |
 
 The following platforms are available for this image:
 
 ```bash
-$ docker run --rm mplatform/mquery ghcr.io/pascaliske/package:latest
-Image: ghcr.io/pascaliske/package:latest
+$ docker run --rm mplatform/mquery ghcr.io/pascaliske/unbound:latest
+Image: ghcr.io/pascaliske/unbound:latest
  * Manifest List: Yes
  * Supported platforms:
    - linux/amd64
@@ -29,10 +29,10 @@ To use this image pull it from one of the following registries:
 
 ```bash
 # github container registry
-docker pull ghcr.io/pascaliske/package
+docker pull ghcr.io/pascaliske/unbound
 
 # docker hub
-docker pull pascaliske/package
+docker pull pascaliske/unbound
 ```
 
 ## License
