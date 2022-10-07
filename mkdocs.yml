@@ -1,6 +1,6 @@
 # project
 site_name: docker-unbound
-site_description: TBD
+site_description: Small Alpine based image for unbound - the validating and caching recursive DNS resolver.
 site_author: Pascal Iske
 site_url: https://pascaliske.github.io/docker-unbound/
 

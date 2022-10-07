@@ -1,6 +1,6 @@
 {
   "name": "docker-unbound",
-  "description": "",
+  "description": "Small Alpine based image for unbound - the validating and caching recursive DNS resolver.",
   "version": "0.0.1",
   "license": "MIT",
   "author": {
