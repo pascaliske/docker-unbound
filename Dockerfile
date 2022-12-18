@@ -19,8 +19,12 @@ RUN case ${TARGETPLATFORM} in \
 FROM alpine:3.17
 LABEL maintainer="info@pascaliske.dev"
 
+# environment
+ENV UNBOUND_PORT=5053
+
 # install unbound
 RUN apk update && apk upgrade && apk add --no-cache \
+    gettext \
     bind-tools \
     openssl \
     unbound
@@ -28,8 +32,8 @@ RUN apk update && apk upgrade && apk add --no-cache \
 # inject built files
 COPY --from=tini /tini /sbin/tini
 
-# inkect config files
-COPY config/unbound.conf /etc/unbound/unbound.conf
+# inject config files
+COPY config/unbound.conf.tpl /etc/unbound/unbound.conf.tpl
 
 # inject entrypoint
 COPY docker-entrypoint.sh /docker-entrypoint.sh
@@ -38,11 +42,11 @@ COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN echo "net.core.rmem_max=1048576" >> /etc/sysctl.conf
 
 # health check
-HEALTHCHECK CMD dig @127.0.0.1 -p 5053 cloudflare.com || exit 1
+HEALTHCHECK CMD dig @127.0.0.1 -p ${UNBOUND_PORT} cloudflare.com || exit 1
 
 # expose port
-EXPOSE 5053/tcp
-EXPOSE 5053/udp
+EXPOSE ${UNBOUND_PORT}/tcp
+EXPOSE ${UNBOUND_PORT}/udp
 
 # let's go!
 ENTRYPOINT [ "/sbin/tini", "--", "/docker-entrypoint.sh" ]
