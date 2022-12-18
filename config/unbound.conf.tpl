@@ -8,7 +8,7 @@ server:
 
     # network
     interface: 0.0.0.0
-    port: 5053
+    port: ${UNBOUND_PORT}
 
     # response
     do-ip4: yes
