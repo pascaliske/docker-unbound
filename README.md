@@ -37,7 +37,7 @@ docker pull pascaliske/unbound
 
 ## Kubernetes
 
-If you want to use this tool inside of a Kubernetes cluster [check out my ready to deploy Helm chart](https://charts.pascaliske.dev/charts/unbound/)!
+If you want to use this tool inside of a Kubernetes cluster [check out my ready to deploy Helm chart](https://charts.pascaliske.dev/charts/unbound/?utm_source=GitHub&utm_medium=Repository&utm_campaign=docker-unbound)!
 
 ## License
 
