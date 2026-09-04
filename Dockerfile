@@ -22,12 +22,14 @@ LABEL maintainer="info@pascaliske.dev"
 # environment
 ENV UNBOUND_PORT=5053
 
-# install unbound
+# install dependencies
 RUN apk update && apk upgrade && apk add --no-cache \
     gettext \
     bind-tools \
-    openssl \
-    unbound
+    openssl
+
+# install unbound
+RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/main unbound
 
 # inject built files
 COPY --from=tini /tini /sbin/tini
