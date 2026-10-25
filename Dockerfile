@@ -1,5 +1,5 @@
 # tini
-FROM --platform=${BUILDPLATFORM} alpine:3.24.2 AS tini
+FROM --platform=${BUILDPLATFORM} alpine:3.24.3 AS tini
 LABEL maintainer="info@pascaliske.dev"
 
 # environment
@@ -16,7 +16,7 @@ RUN case ${TARGETPLATFORM} in \
     && chmod +x /tini
 
 # final image
-FROM alpine:3.24.2
+FROM alpine:3.24.3
 LABEL maintainer="info@pascaliske.dev"
 
 # environment
